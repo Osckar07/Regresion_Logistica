@@ -1,0 +1,33 @@
+la Regresión Logística es un algoritmo de clasificación, es un metodo util para resolver problemas de claisifcacion binaria.
+Es un metodo estadistico para predicir clases binarias. El resultado que se espera es de naturaleza dicotomica .
+Es uno de los algoritmos de machine learning ,as simples y mas utilizados para la clasificacaion de clases
+
+    Regresión Logística Binaria: es la Regresión Logística clásica, en la que hay dos clases a predecir.
+    Regresión Logística Multinomial: hay más de dos categorías a predecir, pero las clases no guardan ningún orden entre ellas.
+    Regresión Logística Ordinal: hay más de dos categorías a predecir y existe un orden entre las categorías (por ejemplo predecir en que posición va a quedar cada equipo al final de la liga)
+
+La curva de regresión logistica se parece a la, Función Sigmoide(Curva en forma de S(Sigma -> Sigma)), función de  la curva.
+dicha curva esta muy ligada a la función gaussiana.
+
+La Regresión logistica = Regresión lineal + Función Sigmoide
+
+La función sigmoide recibe a la regresión lineal, y si da
+Osea todas las entradas que dan un valor positivo van a tener como salida a y = 1
+Si los valores que se le pasan a la función sigmoide estan en la parte negativa entonces nos devolver un número menor a 0.5
+por lo tanto su salida será y = 0
+
+NOTA : la zona de incertidumbre en el caso de esta regresión logistica se encuentra justamente en la zona de transición
+osea donde se define si un número será 1 o 0 (osea en la zona de 0.5) , según nos alejemos de esa parte tendremos menos duda
+
+A pesar de que la regresión logistica no nos devuelve valores en terminos de probabilidad, se puede ver como una probabilidad estimada
+de que nos de una clase osea y= 0 o y = 1, dadas unas entradas y unos parametros.
+
+La linea que separa los valores osea 0.5 se obtiene mediante un límite de decisón(Desición de Boundary), lo que nos permite
+esta función es crear la curva para saber que valores se considerarn 1 y cuales 0. entorno a ese limite
+se determina si un numero es 0 o  1.
+
+NOTA: En el caso de que la funciòn sigmoide no recibe una regresión lineal, sino una regresión polinomica, lo que se forma son
+limites curvos, lo que nos permite definir conjuntos
+
+Ver: https://medium.com/@rubialesalberto/regresi%C3%B3n-log%C3%ADstica-con-sklearn-4384c707075d
+https://medium.com/@rubialesalberto/regresi%C3%B3n-lineal-con-sklearn-bc61cf94c1e
